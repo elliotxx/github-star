@@ -51,13 +51,13 @@ gh auth login
 
 ```bash
 # 使用 curl
-curl -s https://raw.githubusercontent.com/elliotxx/github-star/main/github-star.sh | bash -s -- kubernetes/kubernetes
+curl -s https://raw.githubusercontent.com/elliotxx/github-star/main/github-star.sh | bash -s -- KusionStack/karpor
 
 # 使用 wget
-wget -qO- https://raw.githubusercontent.com/elliotxx/github-star/main/github-star.sh | bash -s -- golang/go
+wget -qO- https://raw.githubusercontent.com/elliotxx/github-star/main/github-star.sh | bash -s -- KusionStack/karpor
 
 # 直接通过 bash 执行
-bash <(curl -s https://raw.githubusercontent.com/elliotxx/github-star/main/github-star.sh) denoland/deno
+bash <(curl -s https://raw.githubusercontent.com/elliotxx/github-star/main/github-star.sh) KusionStack/karpor
 ```
 
 ### 2. 💾 本地安装
@@ -73,7 +73,7 @@ chmod +x github-star.sh
 ./github-star.sh owner/repo
 
 # 使用示例
-./github-star.sh kubernetes/kubernetes
+./github-star.sh KusionStack/karpor
 ```
 
 ### 3. ⚡️ 别名设置
@@ -88,7 +88,7 @@ alias ghstar='/path/to/github-star.sh'
 alias ghstar='curl -s https://raw.githubusercontent.com/elliotxx/github-star/main/github-star.sh | bash -s --'
 
 # 别名使用示例
-ghstar kubernetes/kubernetes
+ghstar KusionStack/karpor
 ```
 
 ## 📊 输出格式

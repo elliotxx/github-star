@@ -51,13 +51,13 @@ There are several ways to use this tool:
 
 ```bash
 # Using curl
-curl -s https://raw.githubusercontent.com/elliotxx/github-star/main/github-star.sh | bash -s -- kubernetes/kubernetes
+curl -s https://raw.githubusercontent.com/elliotxx/github-star/main/github-star.sh | bash -s -- KusionStack/karpor
 
 # Using wget
-wget -qO- https://raw.githubusercontent.com/elliotxx/github-star/main/github-star.sh | bash -s -- golang/go
+wget -qO- https://raw.githubusercontent.com/elliotxx/github-star/main/github-star.sh | bash -s -- KusionStack/karpor
 
 # Pipe directly to bash
-bash <(curl -s https://raw.githubusercontent.com/elliotxx/github-star/main/github-star.sh) denoland/deno
+bash <(curl -s https://raw.githubusercontent.com/elliotxx/github-star/main/github-star.sh) KusionStack/karpor
 ```
 
 ### 2. 💾 Local Installation
@@ -73,7 +73,7 @@ chmod +x github-star.sh
 ./github-star.sh owner/repo
 
 # Example usage
-./github-star.sh kubernetes/kubernetes
+./github-star.sh KusionStack/karpor
 ```
 
 ### 3. ⚡️ Alias Setup
@@ -88,7 +88,7 @@ alias ghstar='/path/to/github-star.sh'
 alias ghstar='curl -s https://raw.githubusercontent.com/elliotxx/github-star/main/github-star.sh | bash -s --'
 
 # Example usage with alias
-ghstar kubernetes/kubernetes
+ghstar KusionStack/karpor
 ```
 
 ## 📊 Output Format
