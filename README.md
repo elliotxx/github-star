@@ -1,23 +1,30 @@
 ![github-star](https://socialify.git.ci/elliotxx/github-star/image?description=1&font=Raleway&issues=1&language=1&name=1&owner=1&pattern=Circuit%20Board&pulls=1&stargazers=1&theme=Auto)
 
-# GitHub Star Statistics
+# ⭐️ GitHub Star Statistics
 
 A tool to analyze and visualize the daily star statistics of GitHub repositories.
 
-## Features
+## ✨ Features
 
-- Track daily star counts for any GitHub repository
-- Generate statistics and trends
-- Easy-to-use command line interface
-- Colorful output for better visualization
+- 📊 Track daily star counts for any GitHub repository
+- 📈 Generate statistics and trends
+- 💻 Easy-to-use command line interface
+- 🎨 Colorful output for better visualization
 
-## Prerequisites
+## 🚀 Prerequisites
 
-- GitHub CLI (`gh`)
-- `jq` command line tool
-- Bash shell environment
+> ⚠️ **Important Notes:**
+> - Currently only supports macOS
+> - Requires GitHub CLI authentication
+> - Internet connection required for API access
 
-## Installation
+Required tools:
+- 🔧 macOS operating system
+- 🛠 GitHub CLI (`gh`)
+- 🔍 `jq` command line tool
+- 🐚 Bash shell environment
+
+## 🔧 Installation
 
 1. Install GitHub CLI:
 ```bash
@@ -34,11 +41,11 @@ brew install jq
 gh auth login
 ```
 
-## Usage
+## 📖 Usage
 
 There are several ways to use this tool:
 
-### 1. Direct Usage (Without Cloning)
+### 1. 🌐 Direct Usage (No Download Required)
 
 ```bash
 # Using curl
@@ -51,21 +58,23 @@ wget -qO- https://raw.githubusercontent.com/elliotxx/github-star/main/github-sta
 bash <(curl -s https://raw.githubusercontent.com/elliotxx/github-star/main/github-star.sh) denoland/deno
 ```
 
-### 2. Local Installation
+### 2. 💾 Local Installation
 
 ```bash
-# Clone the repository
-git clone https://github.com/elliotxx/github-star.git
-cd github-star
+# Download the script
+curl -O https://raw.githubusercontent.com/elliotxx/github-star/main/github-star.sh
 
 # Make the script executable
 chmod +x github-star.sh
 
 # Run the script
 ./github-star.sh owner/repo
+
+# Example usage
+./github-star.sh kubernetes/kubernetes
 ```
 
-### 3. Alias Setup
+### 3. ⚡️ Alias Setup
 
 Add one of these aliases to your shell configuration file (`~/.bashrc`, `~/.zshrc`, etc.):
 
@@ -80,14 +89,14 @@ alias ghstar='curl -s https://raw.githubusercontent.com/elliotxx/github-star/mai
 ghstar kubernetes/kubernetes
 ```
 
-## Output Format
+## 📊 Output Format
 
 The script outputs data in the following format:
-- Date: The date when stars were received
-- Stars: Number of stars received on that date
-- Total: Cumulative total of stars
-- Trend: Visual indicator of star growth
+- 📅 Date: The date when stars were received
+- ⭐️ Stars: Number of stars received on that date
+- 📈 Total: Cumulative total of stars
+- 🔄 Trend: Visual indicator of star growth
 
-## License
+## ⚖️ License
 
 MIT License
