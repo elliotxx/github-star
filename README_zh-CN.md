@@ -1,6 +1,6 @@
 ![github-star](https://socialify.git.ci/elliotxx/github-star/image?description=1&font=Raleway&issues=1&language=1&name=1&owner=1&pattern=Circuit%20Board&pulls=1&stargazers=1&theme=Auto)
 
-# ⭐️ GitHub Star 统计工具
+# GitHub Star 统计工具
 
 🐚 一个轻量级的 Shell 脚本，用于分析和可视化 GitHub 仓库的每日 Star 统计数据
 

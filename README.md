@@ -1,6 +1,6 @@
 ![github-star](https://socialify.git.ci/elliotxx/github-star/image?description=1&font=Raleway&issues=1&language=1&name=1&owner=1&pattern=Circuit%20Board&pulls=1&stargazers=1&theme=Auto)
 
-# ⭐️ GitHub Star Statistics
+# GitHub Star Statistics
 
 🐚 A lightweight shell script to analyze and visualize the daily star statistics of GitHub repositories.
 

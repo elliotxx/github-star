@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# 检查参数
+# Check arguments
 if [ $# -ne 1 ]; then
   echo "Usage: $0 owner/repo"
   echo "Example: $0 kubernetes/kubernetes"
@@ -9,7 +9,7 @@ fi
 
 REPO=$1
 
-# 检查是否安装了 gh 命令
+# Check if gh command is installed
 if ! command -v gh &>/dev/null; then
   echo "GitHub CLI (gh) is not installed. Please install it first."
   echo "Visit: https://cli.github.com/"
@@ -17,7 +17,7 @@ if ! command -v gh &>/dev/null; then
   exit 1
 fi
 
-# 检查是否已登录
+# Check if logged in
 if ! gh auth status &>/dev/null; then
   echo "Please login to GitHub first using: gh auth login"
   exit 1
@@ -25,10 +25,10 @@ fi
 
 echo "Fetching stargazers data for $REPO..."
 
-# 使用临时变量存储分隔符
+# Store separator in a variable
 SEP="__SEPARATOR__"
 
-# 获取并格式化输出
+# Get and format output
 (
   echo "Date${SEP}Stars${SEP}Total${SEP}Trend"
   gh api --paginate "/repos/$REPO/stargazers" \
@@ -39,17 +39,17 @@ SEP="__SEPARATOR__"
     uniq -c |
     awk -v sep="${SEP}" 'BEGIN {
             total = 0
-            # ANSI 颜色代码
-            gray = "\033[90m"    # 灰色
-            green = "\033[32m"   # 绿色
-            yellow = "\033[33m"  # 黄色
-            red = "\033[31m"     # 红色
+            # ANSI color codes
+            gray = "\033[90m"    # Gray
+            green = "\033[32m"   # Green
+            yellow = "\033[33m"  # Yellow
+            red = "\033[31m"     # Red
             reset = "\033[0m"
          }
          {
             total += $1
             stars = $1
-            # 根据 star 数量决定显示的标记
+            # Decide the mark to display based on the number of stars
             if (stars == 0) mark = gray "·" reset
             else if (stars == 1) mark = gray "+" reset
             else if (stars <= 3) mark = green "++" reset
