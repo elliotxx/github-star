@@ -2,7 +2,9 @@
 
 # ⭐️ GitHub Star Statistics
 
-A tool to analyze and visualize the daily star statistics of GitHub repositories.
+🐚 A lightweight shell script to analyze and visualize the daily star statistics of GitHub repositories.
+
+[English](./README.md) | [简体中文](./README_zh-CN.md)
 
 ## ✨ Features
 
