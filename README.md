@@ -1,3 +1,5 @@
+![github-star](https://socialify.git.ci/elliotxx/github-star/image?description=1&font=Raleway&issues=1&language=1&name=1&owner=1&pattern=Circuit%20Board&pulls=1&stargazers=1&theme=Auto)
+
 # GitHub Star Statistics
 
 A tool to analyze and visualize the daily star statistics of GitHub repositories.
@@ -34,13 +36,48 @@ gh auth login
 
 ## Usage
 
+There are several ways to use this tool:
+
+### 1. Direct Usage (Without Cloning)
+
 ```bash
+# Using curl
+curl -s https://raw.githubusercontent.com/elliotxx/github-star/main/github-star.sh | bash -s -- kubernetes/kubernetes
+
+# Using wget
+wget -qO- https://raw.githubusercontent.com/elliotxx/github-star/main/github-star.sh | bash -s -- golang/go
+
+# Pipe directly to bash
+bash <(curl -s https://raw.githubusercontent.com/elliotxx/github-star/main/github-star.sh) denoland/deno
+```
+
+### 2. Local Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/elliotxx/github-star.git
+cd github-star
+
+# Make the script executable
+chmod +x github-star.sh
+
+# Run the script
 ./github-star.sh owner/repo
 ```
 
-Example:
+### 3. Alias Setup
+
+Add one of these aliases to your shell configuration file (`~/.bashrc`, `~/.zshrc`, etc.):
+
 ```bash
-./github-star.sh kubernetes/kubernetes
+# Basic alias
+alias ghstar='/path/to/github-star.sh'
+
+# Direct from GitHub (no local file needed)
+alias ghstar='curl -s https://raw.githubusercontent.com/elliotxx/github-star/main/github-star.sh | bash -s --'
+
+# Example usage with alias
+ghstar kubernetes/kubernetes
 ```
 
 ## Output Format
