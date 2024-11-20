@@ -6,6 +6,8 @@
 
 [English](./README.md) | [简体中文](./README_zh-CN.md)
 
+https://github.com/user-attachments/assets/d4af48c6-e830-47fb-b16e-d5633f8513fd
+
 ## ✨ 特性
 
 - 📊 追踪任意 GitHub 仓库的每日 Star 数量
